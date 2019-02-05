@@ -1,5 +1,120 @@
+/* ================== GENERAL ============================== */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+/* hr {
+  background: url(../assets/Border-BG.jpg);
+  height: 20px;
+  transform: rotateX(180deg);
+} */
+/* ================== HEADER =============================== */
+header {
+  background: black;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  /* color: #404040; */
+}
+#border_header {
+  border-bottom: 10px solid transparent;
+  border-image: url(../assets/Border-BG.jpg) 50 repeat;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 65px;
+}
+span {
+  color: white;
+}
+.header_container {
+  display: flex;
+  /* justify-content: center; */
+  color: #474747;
+}
+.header_container a {
+  color: white;
+  background: #4893cb;
+  align-self: flex-start;
+}
+.header_picture img {
+  width: 30vw;
+}
+.header_catcher {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: space-around;
+}
+
+.header_cta {
+  width: 70vw;
+  /* margin: 0 auto; */
+  display: flex;
+  /* justify-content: center; */
+  background: #4893cb;
+  padding: 15px 5vw;
+  align-items: center;
+  position: relative;
+}
+.header_cta::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 3vw solid #4893cb;
+  border-right: 3vw solid transparent;
+}
+.header_cta a {
+  background: #ffffff;
+  margin-left: auto;
+  color: #474747;
+}
+
+/* =================================== FEATURES ============================== */
+.features_container {
+  margin: 5vw auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  justify-content: center;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: auto 5vw;
+  width: 200px;
+  height: 300px;
+}
+.readmore {
+  background: #4893cb;
+  width: 80%%;
+  padding: 10px 20px;
+  color: #ffffff;
+}
+.feature span {
+  color: #474747;
+}
+.feature_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background: #474747;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.fas {
+  font-size: 1.5rem;
+  color: white;
 }
