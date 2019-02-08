@@ -3,12 +3,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 h1 {
-  font-size: 200%;
+  font-size: 150%;
 }
 h2 {
   font-size: 1rem;
+}
+h4 {
+  color: white;
 }
 p {
   line-height: 1.5;
@@ -113,22 +117,30 @@ header {
   margin: 5vw auto;
   display: flex;
   flex-wrap: wrap;
-  width: 75vw;
+  width: 90vw;
   justify-content: center;
 }
 .feature {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   margin: 2vw 10px;
-  width: 200px;
-  height: 350px;
+  width: 250px;
+  height: 400px;
+  padding: 20px 0;
 }
 .feature:hover {
   background: white;
   position: relative;
+  box-shadow: 65px 0px 65px -70px rgba(0, 0, 0, 0.6);
+}
+.feature:hover .feature_icon {
+  background: #4893cb;
+}
+.feature:hover a {
+  visibility: hidden;
 }
 .feature:hover::after {
   position: absolute;
@@ -148,8 +160,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   background: #474747;
   border-radius: 50%;
   margin: 0 auto;
@@ -172,10 +184,12 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
-  margin-bottom: 5vw;
+  margin-bottom: 5%;
 }
 .recent_work_box {
   width: 300px;
+  margin-bottom: 20px;
+  box-shadow: 65px 0px 65px -70px rgba(0, 0, 0, 0.6);
   /* background: white; */
 }
 .recent_work_img img {
@@ -217,10 +231,11 @@ header {
 }
 .testimonial_box {
   position: relative;
-  width: 24vw;
+  width: 300px;
   background: white;
   padding: 15px 20px 30px 15px;
-  margin-bottom: 5vw;
+  margin-bottom: 10%;
+  box-shadow: 65px 0px 65px -70px rgba(0, 0, 0, 0.6);
 }
 .testimonial_box::after {
   position: absolute;
@@ -232,15 +247,59 @@ header {
   border-top: 3vw solid white;
   border-right: 3vw solid transparent;
 }
+
+/* =======================  DEVELOPMENT STYLE =================== */
 .development_container {
   grid-area: development;
+}
+.development_tabs {
+  position: relative;
+  clear: both;
+  margin: auto;
+  width: 300px;
+}
+.design_tab,
+.production_tab {
+  float: left;
+  margin-top: 20px;
+}
+.design_tab label,
+.production_tab label {
+  background: #d0d0d0;
+  padding: 20px 15px;
+}
+.tab_content {
+  position: absolute;
+  background: white;
+  left: 0px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 20px 30px 15px;
+  box-shadow: 65px 0px 65px -70px rgba(0, 0, 0, 0.6);
+}
+.tab_content p {
+  margin-bottom: 21%;
+}
+.tab_content a {
+  float: right;
+}
+.checkboxtab {
+  display: none;
+}
+.checkboxtab:checked ~ label {
+  color: #474747;
+  font-weight: bold;
+  background: white;
+}
+.checkboxtab:checked ~ .tab_content {
+  z-index: 1;
 }
 /* .button_test {
   display: flex;
   justify-content: flex-end;
 } */
 
-.development_box {
+/* .development_box {
   width: 23.5vw;
   padding: 15px 20px 30px 15px;
   background: white;
@@ -249,16 +308,55 @@ header {
   margin-left: 45%;
 }
 .development_box p {
-  margin-bottom: 40%;
-}
+  margin-bottom: 43%;
+} */
 /* ======================= GRID STYLE ======================== */
 .grid_container {
   display: grid;
   width: 75vw;
   margin: auto;
-  grid-gap: 1.5vw;
+  grid-column-gap: 25px;
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
     "title-testimonials title-development"
     "testimonials development";
+}
+/* ===================== FOOTER CTA ========================== */
+.footer_cta {
+  width: 75vw;
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: center; */
+  background: #4893cb;
+  padding: 15px 5vw;
+  align-items: center;
+  position: relative;
+}
+.footer_cta::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 3vw solid #4893cb;
+  border-right: 3vw solid transparent;
+}
+.footer_cta a {
+  background: #ffffff;
+  margin-left: auto;
+  color: #474747;
+}
+.footer_information_container {
+  background: #474747;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.footer_information {
+  display: flex;
+  width: 75vw;
+  margin: auto;
+}
+.footer_information h4 {
+  margin-bottom: 5%;
 }

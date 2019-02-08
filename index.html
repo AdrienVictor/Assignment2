@@ -11,6 +11,10 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <header id="border_header">
@@ -160,18 +164,110 @@
         </div>
       </div>
       <div class="development_container">
-        <div class="development_box">
-          <h3>DESIGN</h3>
-          <h3>The design</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            incidunt perferendis reprehenderit! Accusantium, unde! Ipsa nam
-            architecto iusto molestiae mollitia ratione consequatur, nisi
-            tempore nesciunt sed commodi veniam voluptatum perspiciatis?
-          </p>
-          <a href="#" class="readmore_button">READ MORE</a>
+        <div class="development_tabs">
+          <div class="design_tab">
+            <input
+              type="radio"
+              name="checkbox_tabs"
+              id="designtab"
+              class="checkboxtab"
+              checked
+            />
+            <label for="designtab">DESIGN</label>
+            <div class="tab_content">
+              <h3>The design</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam incidunt perferendis reprehenderit! Accusantium, unde!
+                <br />
+                <br />
+                Ipsa nam architecto iusto molestiae mollitia ratione
+                consequatur, nisi tempore nesciunt sed commodi veniam voluptatum
+                perspiciatis?
+              </p>
+              <a href="#" class="readmore_button">READ MORE</a>
+            </div>
+          </div>
+          <div class="production_tab">
+            <input
+              type="radio"
+              name="checkbox_tabs"
+              id="productiontab"
+              class="checkboxtab"
+            />
+            <label for="productiontab">PRODUCTION</label>
+            <div class="tab_content">
+              <h3>The production</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam incidunt perferendis reprehenderit! Accusantium, unde!
+                <br />
+                <br />
+                Ipsa nam architecto iusto molestiae mollitia ratione
+                consequatur, nisi tempore nesciunt sed commodi veniam voluptatum
+                perspiciatis?
+              </p>
+              <a href="#" class="readmore_button">READ MORE</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="footer_cta">
+        <h2>GET IN TOUCH WITH US <span>NOW!</span></h2>
+        <a href="#" class="cta_button">CONTACT US</a>
+      </div>
+      <div class="footer_information_container">
+        <div class="footer_information">
+          <div class="information aboutus">
+            <h4>ABOUT US</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, id!
+            </p>
+            <address>
+              123 Street Name <br />
+              Road Name <br />
+              London <br />
+              +44 74139 13807
+            </address>
+          </div>
+          <div class="information latesttweets">
+            <h4>LATEST TWEETS</h4>
+            <p class="tweet1">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, adipisci?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae,
+              incidunt!
+            </p>
+          </div>
+          <div class="information latestposts">
+            <h4>LATEST POSTS</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              veniam?
+            </p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="information flickr">
+            <h4>FLICKR</h4>
+            <div class="flickr_grid">
+              <div class="flickrbox"></div>
+              <div class="flickrbox"></div>
+              <div class="flickrbox"></div>
+              <div class="flickrbox"></div>
+              <div class="flickrbox"></div>
+              <div class="flickrbox"></div>
+              <div class="flickrbox"></div>
+              <div class="flickrbox"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
