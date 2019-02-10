@@ -310,7 +310,7 @@ header {
 .development_box p {
   margin-bottom: 43%;
 } */
-/* ======================= GRID STYLE ======================== */
+/* ======================= DEVELOPMENT GRID STYLE ======================== */
 .grid_container {
   display: grid;
   width: 75vw;
@@ -324,6 +324,7 @@ header {
 /* ===================== FOOTER CTA ========================== */
 .footer_cta {
   width: 75vw;
+  height: auto;
   margin: 0 auto;
   display: flex;
   /* justify-content: center; */
@@ -348,15 +349,69 @@ header {
   color: #474747;
 }
 .footer_information_container {
-  background: #474747;
+  background: #3f3f3f;
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 1%;
 }
 .footer_information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75vw;
+  margin: auto;
+}
+.information {
+  width: 235px;
+  padding-right: 10px;
+}
+.footer_information h4 {
+  margin-bottom: 5%;
+}
+.aboutus p,
+.latesttweets p {
+  margin-bottom: 20px;
+}
+.latestposts p {
+  margin-bottom: 10px;
+}
+hr {
+  border: 2px inset gray;
+}
+/* ================================= FLICKR GRID ================================== */
+.flickr {
+  padding: 0;
+}
+.flickrbox {
+  width: 55px;
+  height: 55px;
+  background: #252525;
+}
+.flickr_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  /* justify-content: space-between; */
+}
+/* ================================ FOOTER LINKS ================================= */
+.footer_links {
+  background: #343434;
+  display: flex;
+  height: 5vw;
+  margin: auto;
+}
+.links_container {
   display: flex;
   width: 75vw;
   margin: auto;
 }
-.footer_information h4 {
-  margin-bottom: 5%;
+.links_container p {
+  margin-right: auto;
+}
+
+.links_icons {
+  display: flex;
+  width: 235px;
+  font-size: 1.5rem;
+  justify-content: space-around;
+  color: #252525;
 }
