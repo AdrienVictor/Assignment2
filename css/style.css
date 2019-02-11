@@ -32,12 +32,14 @@ a {
 }
 .cta_button {
   padding: 10px 45px;
+  border-bottom: 1px outset #474647;
 }
 .readmore_button {
   background: #4893cb;
   padding: 10px 20px;
   color: #ffffff;
   font-size: 12px;
+  border-bottom: 1px outset #474647;
 }
 span {
   color: white;
@@ -451,7 +453,7 @@ footer p {
   font-size: 0.8rem;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   top: -45px;
   left: 50%;
 }
