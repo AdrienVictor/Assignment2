@@ -7,15 +7,19 @@
 }
 h1 {
   font-size: 150%;
+  font-weight: 200;
 }
 h2 {
   font-size: 1rem;
+  font-weight: 100;
 }
 h4 {
   color: white;
+  font-weight: 200;
 }
 p {
   line-height: 1.5;
+  color: #474747;
 }
 body {
   background: #efefef;
@@ -24,17 +28,20 @@ body {
 a {
   text-align: center;
   text-decoration: none;
+  border-radius: 5px;
 }
 .cta_button {
-  padding: 15px 50px;
+  padding: 10px 45px;
 }
 .readmore_button {
   background: #4893cb;
-  padding: 10px 25px;
+  padding: 10px 20px;
   color: #ffffff;
+  font-size: 12px;
 }
 span {
   color: white;
+  font-weight: bold;
 }
 fieldset {
   width: 75vw;
@@ -54,10 +61,11 @@ legend {
 } */
 /* ================== HEADER =============================== */
 header {
-  background: black;
+  background: #343434;
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 33vw;
 
   /* color: #404040; */
 }
@@ -69,7 +77,7 @@ header {
 .header_container {
   display: flex;
   /* justify-content: center; */
-  color: #474747;
+  margin-bottom: auto;
 }
 .header_container a {
   color: white;
@@ -77,13 +85,17 @@ header {
   align-self: flex-start;
 }
 .header_picture img {
-  width: 30vw;
+  width: 40vw;
 }
 .header_catcher {
   display: flex;
   flex-direction: column;
   width: auto;
   justify-content: space-around;
+}
+.header_catcher h1,
+.header_catcher p {
+  color: #898989;
 }
 
 .header_cta {
@@ -92,6 +104,7 @@ header {
   display: flex;
   /* justify-content: center; */
   background: #4893cb;
+  color: white;
   padding: 15px 5vw;
   align-items: center;
   position: relative;
@@ -153,7 +166,8 @@ header {
   border-right: 3vw solid transparent;
 }
 
-.feature span {
+.feature span,
+.feature h2 {
   color: #474747;
 }
 .feature_icon {
@@ -162,7 +176,7 @@ header {
   align-items: center;
   width: 80px;
   height: 80px;
-  background: #474747;
+  background: radial-gradient(gray, #474647);
   border-radius: 50%;
   margin: 0 auto;
 }
@@ -267,6 +281,7 @@ header {
 .production_tab label {
   background: #d0d0d0;
   padding: 20px 15px;
+  color: #474747;
 }
 .tab_content {
   position: absolute;
@@ -290,6 +305,7 @@ header {
   color: #474747;
   font-weight: bold;
   background: white;
+  box-shadow: 65px 0px 65px -70px rgba(0, 0, 0, 0.6);
 }
 .checkboxtab:checked ~ .tab_content {
   z-index: 1;
@@ -329,6 +345,7 @@ header {
   display: flex;
   /* justify-content: center; */
   background: #4893cb;
+  color: white;
   padding: 15px 5vw;
   align-items: center;
   position: relative;
@@ -364,6 +381,10 @@ header {
   width: 235px;
   padding-right: 10px;
 }
+.information p,
+address {
+  color: gray;
+}
 .footer_information h4 {
   margin-bottom: 5%;
 }
@@ -375,7 +396,7 @@ header {
   margin-bottom: 10px;
 }
 hr {
-  border: 2px inset gray;
+  border: 2px inset #474747;
 }
 /* ================================= FLICKR GRID ================================== */
 .flickr {
@@ -393,10 +414,13 @@ hr {
   /* justify-content: space-between; */
 }
 /* ================================ FOOTER LINKS ================================= */
+footer p {
+  color: #898989;
+}
 .footer_links {
   background: #343434;
   display: flex;
-  height: 5vw;
+  height: 7vw;
   margin: auto;
 }
 .links_container {
@@ -411,7 +435,48 @@ hr {
 .links_icons {
   display: flex;
   width: 235px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   justify-content: space-around;
   color: #252525;
+}
+.fab {
+  position: relative;
+}
+.fab .tooltip {
+  visibility: hidden;
+  width: 70px;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: -45px;
+  left: 50%;
+}
+.tooltip::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0.7vw solid gray;
+  border-right: 0.7vw solid transparent;
+}
+.fab:hover .tooltip {
+  visibility: visible;
+}
+.fab:hover {
+  color: white;
+}
+.fa-arrow-up {
+  font-size: 2rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background: #252525;
+  color: #343434;
 }
